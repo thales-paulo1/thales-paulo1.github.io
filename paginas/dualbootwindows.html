@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="../imagens/icones/icone_dual_boot.ico" />
+    <title>Dual Boot Windows</title>
+</head>
+<body>
+    <header>BootsTrales</header>
+    <nav>
+        <ul id="inicio">
+            <li><a href="../index.html" target="_blank">Página Inicial</a></li>
+            <li><a href="dualbootlinux.html" target="_blank">Dual Boot no Linux</a></li>
+            <li><a href="dualbootarquivos.html" target="_blank">Partição de Arquivos</a></li>
+            <li><a href="comofazerumamidiabootavel.html" target="_blank">Mídia Bootável</a></li>
+            <li><a href="baixarisodowindowsnowindows.html" target="_blank">ISO do Windows no Windows</a></li>
+            <li><a href="baixarisodowindowsnolinux.html" target="_blank">ISO do Windows no Linux</a></li>
+            <li><a href="baixarisodolinux.html" target="_blank">ISO do Linux</a></li>
+            <li><a href="entrandonabios.html" target="_blank">Entrando na BIOS</a></li>
+            <li><a href="sobre.html" target="_blank">Sobre Mim</a></li>
+            <li><a href="#fim">Ir para o fim da página</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Como fazer o dual boot no Windows</h1>
+        <p>
+            Para fazer o Dual Boot do o ideal é sempre se começar pelo Windows pois, se você começar pelo Linux pode ser que o Windows não seja reconhecido, ou apresente falhas. Aqui detalharei a maioria das telas em que o usuário passará durante o processo.  
+        </p>
+        <p>
+            Agora que você chegou aqui, você já deve ter feito o processo de <a href="comofazerumamidiabootavel.html" target="_blank">baixar as imagens ".iso"</a> na sua mídia bootável com o <a href="https://www.ventoy.net/en/download.html" target="_blank">Ventoy</a>, um passo importante para prosseguir é <a href="entrandonabios.html" target="_blank">alterar a ordem de boot na BIOS</a> do seu computador. Após isso siga esses passos para instalação.
+        </p><br />
+
+        <ol>
+            <!-- Passo 1: -->
+            <li>
+                Após ter selecionado a ISO do Windows 10 na tela do Ventoy, agora é hora de <strong>iniciar a instalação do Windows.</strong> A primiera tela que aparecerá será essa a seguir, nela você selecionará o seu idioma e o seu estilo de teclado, aqui eu usei o ABNT2. Feita a configuração clique em <strong>"Avançar".</strong>
+                <p>
+                    <img src="../imagens/windows/passo1.png" alt="Tela para selecionar o idioma e o teclado do Windows" title="Tela para selecionar o idioma e o teclado do Windows" style="width: 500px; height: 300px;" /><br /><br />
+                </p>
+            </li>
+        
+            <!-- Passo 2: -->
+            <li>
+                Apenas aperte em <strong>"Instalar Agora".</strong>
+                <p>
+                    <img src="../imagens/windows/passo2.png" alt="Tela para instalar o Windows" title="Tela para instalar o Windows" style="width: 500px; height: 300px;" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 3: -->
+            <li>
+                Coloque a <strong>chave do Windows</strong> caso possua uma licença. Se quiser configura-lá depois, basta clicar em <strong>"não tenho a chave do produto".</strong>
+                <p>
+                    <img src="../imagens/windows/passo3.png" alt="Tela pra colocar a Chave do Windows" title="Tela pra colocar a Chave do Windows" style="width: 500px; height: 300px;" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 4: -->
+            <li>
+                Selecione a <strong>versão do Windows</strong> que desejar. Aqui estarei utilizando o Windows 10 Pro.
+                <sup>
+                Se você não sabe a versão do Windows que está utilizando e deseja manter na mesma, nesse <a href="https://support.microsoft.com/pt-br/windows/qual-vers%C3%A3o-do-sistema-operacional-microsoft-windows-estou-usando-628bec99-476a-2c13-5296-9dd081cdd808#:~:text=Para%20descobrir%20qual%20vers%C3%A3o%20do,%3E%20Configura%C3%A7%C3%B5es%20%3E%20Sistema%20%3E%20Sobre%20." target="_blank">link</a> você será redirecionado para um tutorial no site da Microsoft. 
+                </sup>
+                <p>
+                    <img src="../imagens/windows/passo4.png" alt="Tela de selecionar a versão do Windows" title="Tela de selecionar a versão do Windows" style="width: 500px; height: 300px;" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 5: -->
+            <li>
+                Basta marcar a opção <strong>"Aceito os termos de licença"</strong> e clicar em <strong>"Avançar".</strong>
+                <p>
+                    <img src="../imagens/windows/passo5.png" alt="Tela de linceças do Windows" title="Tela de linceças do Windows" style="width: 500px; height: 300px;" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 6: -->
+            <li>
+                Selecione o tipo de instalação <strong>"Personalizada"</strong> do Windows.
+                <p>
+                    <img src="../imagens/windows/passo6.png" alt="Tela de tipo de instalação" title="Tela de tipo de instalação" style="width: 500px; height: 300px;" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 7: -->
+            <li>
+                Chegando em uma tela semelhante, provavelmente se você está fazendo isso pela primeira vez, aparecerá várias partições criadas pelo seu SO, semelhante ao da imagem do <a href="#passo11">passo 11.</a>. É importante para fazer a resintalação do Windows <strong>excluir</strong> todas essas partições.
+                <br />
+                <strong>IMPORTANTE: TUDO (arquivos, fotos, músicas, aplicativos, entre outros) SERÁ APAGADO DO SEU HD/SSD! INCLUSIVE O PRÓPRIO SISTEMA OPERACIONAL, ESTEJA CIENTE QUE ESSA AÇÃO É IRREVERSÍVEL E CERTIFIQUE-SE DE QUE TENHA FEITO BACKUP DE TODOS SEUS AQRUIVOS ANTES DE PROSSEGUIR.</strong> Para exclir uma partição é só selecioná-la e clicar em <strong>"Excluir".</strong> Após você apagar todas as partições, você chegará em uma tela semelhante a essa.
+                <br />
+                <em>Nota: aqui você já formatou seu HD/SSD e qualquer coisa que tinha lá, agora não existe mais por isso, tenha certeza que é isso que você deseja.</em>
+                <p>
+                    <img src="../imagens/windows/passo7.png" alt="Tela de onde instalar o Windows" title="Tela de onde instalar o Windows" style="width: 500px; height: 300px;" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 8: -->
+            <li>
+                Após o passo anterior. clique em <strong>"Novo"</strong> e um espaço aparecerá para você escolher o tamanho da partição do Windows em MB. Como aqui se trata de 50GB deixei 20000 MB (20GB aproximadamente) para o Windows. Esse valor é opcional e variável de acordo com a sua necessidade e tamanho do seu HD/SSD. Se você pretende instalar muitos aplicativos pesados no Windows reserve um espaço maior do seu HD/SSD. Clique em <strong>"Aplicar"</strong> e pronto a sua partição estará criada.
+                <p>
+                    <img src="../imagens/windows/passo8.png" alt="Tela de tamanho da partição do Windows" title="Tela de tamanho da partição do Windows" style="width: 500px; height: 300px;" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 9: -->
+            <li>
+                Chegando nessa tela você já terá feito a partição do Windows e fará agora a do Linux, selecione <strong>"Espaço não alocado"</strong> e clique em <strong>"Novo"</strong> para fazer a partição.
+                <p>
+                    <img src="../imagens/windows/passo9.png" alt="Tela de partição do Windows e espaço restante" title="Tela de partição do Windows e espaço restante" style="width: 500px; height: 300px;" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 10: -->
+            <li id="passo10">
+                Como aqui se trata de 50GB deixei 20000 MB (20GB aproximadamente) para o Linux. Esse valor é opcional e variável de acordo com a sua necessidade e tamanho do seu HD/SSD. Se você pretende instalar muitos aplicativos pesados no Linux reserve um espaço maior do seu HD/SSD. Clique em <strong>"Aplicar"</strong> e pronto a sua partição estará criada.
+                <p>
+                    <img src="../imagens/windows/passo10.png" alt="Tela de tamanho da partição do Linux" title="Tela de tamanho da partição do Linux" style="width: 500px; height: 300px;" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 11: -->
+            <li id="passo11">
+                Essa partição restante eu deixei reservada para <strong>arquivos</strong>. Ela funcionará semelhante a um pendrive, podendo colocar vários tipo de arquivos ali dentro e depois acessando-os independente do SO que você estiver utilizando. Basta selecionar <strong>"Espaço não alocado"</strong>, clicar em <strong>"Novo"</strong>, escolher o tamanho e <strong>"Aplicar"</strong>. E pronto todo o particionamento foi concluído.
+                <p>
+                    <img src="../imagens/windows/passo11.png" alt="Tela de partição do Windows, Linux e arquivos" title="Tela de partição do Windows, Linux e arquivos" style="width: 500px; height: 300px;" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 12: -->
+            <li>
+                Aqui é muito importante você selecionar a primeira partição (a que tem o valor de armazenamento próximo a que você colocou na hora de criar a partição, aqui no caso a <strong>"Partição 2"</strong>) para colocar o Windows, pois diferente disso, pode ocasionar erros, então após selcionada clique em <strong>"Avançar"</strong>.
+                <p>
+                    <img src="../imagens/windows/passo12.png" alt="Tela de todas as partições criadas no Windows" title="Tela de todas as partições criadas no Windows" style="width: 500px; height: 300px;" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 13: -->
+            <li>
+                Pronto! Aqui seu Windows já estará instalando e basta esperar o tempo necessário para terminar a instalação, esse tempo pode variar de acordo com o seu HD/SSD.
+                <p>
+                    <img src="../imagens/windows/passo13.png" alt="Tela de instalação do Windows" title="Tela de instalação do Windows" style="width: 500px; height: 300px;" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 14: -->
+            <li>
+                Após a o término da instalação aparecerá a mensagem para reiniciar, fique tranquilo seu computador vai reinicará várias vezes durante o processo.
+                <p>
+                    <img src="../imagens/windows/passo14.png" alt="Tela do Windows segundos antes da reinicialização" title="Tela do Windows segundos antes da reinicialização" style="width: 500px; height: 300px;" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 15: -->
+            <li>
+                Espere nessa tela, ela pode demorar um pouco, porque o Windows está fazendo as cofigurações necessárias.
+                <p>
+                    <img src="../imagens/windows/passo15.png" alt="Tela de 'Preparando-se' do Windows" title="Tela de 'Preparando-se' do Windows" style="width: 500px; height: 300px;" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 16: -->
+            <li>
+                Após alguns minutos naquela tela, essa aparecerá e logo já partirá para as configurações.
+                <p>
+                    <img src="../imagens/windows/passo16.png" alt="Tela de 'Um momento' do Windows" title="Tela de 'Um momento' do Windows" style="width: 500px; height: 300px;" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 17: -->
+            <li>
+                Pronto! Você já pode configurar o seu Windows da forma que desejar. Selecionando o idioma
+                <p>
+                    <img src="../imagens/windows/passo17.png" alt="Tela de selecionar o idioma do Windows" title="Tela de selecionar o idioma do Windows" style="width: 500px; height: 300px;" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 18: -->
+            <li>
+                Selecionando o tipo de teclado.
+                <p>
+                    <img src="../imagens/windows/passo18.png" alt="Tela de selecionar o tipo de teclado do Windows" title="Tela de selecionar o tipo de teclado do Windows" style="width: 500px; height: 300px;" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 19: -->
+            <li>
+                Selecionando o tipo de uso.
+                <p>
+                    <img src="../imagens/windows/passo19.png" alt="Tela de tipo de uso para o Windows" title="Tela de tipo de uso para o Windows" style="width: 500px; height: 300px;" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 20: -->
+            <li>
+                Antes dessa tela, aparecerão várias outras telas, para você fazer suas configurações, nesse momento o Windows te orientará como prosseguir.
+                <p>
+                    <img src="../imagens/windows/passo20.png" alt="Tela de 'Isso pode levar alguns minutos' do Windows" title="Tela de 'Isso pode levar alguns minutos' do Windows" style="width: 500px; height: 300px;" /><br /><br />
+                </p>
+            </li>
+        </ol>
+
+        <p>
+            Com o Windows instalado basta irmos para o Linux e fazermos a instalação lá, para terminarmos o dual boot.
+        </p>
+        <br />
+
+        <a href="../index.html">Página inicial</a>  ||
+        <a href="#inicio">Voltar para o início da página</a>  ||
+        <a id="fim" href="dualbootlinux.html" target="_blank">Siga para fazer o processo no Linux</a>
+    </main>
+    <footer>
+        <img src="../imagens/whatsapp_logo/whtasapplogo.png" alt="WhatsApp" title="WhatsApp" style="width: 20px; height: 20px;" />
+        <sup><a href="https://api.whatsapp.com/send?phone=5547996240146">WhatsApp</a></sup><br /> 
+        <img src="../imagens/instagram_logo/instagram_logo.png" alt="Instagram" title="Instagram" style="width: 20px; height: 20px;" />
+        <sup><a href="https://www.instagram.com/thales.paulo_/">Instagram</a></sup>
+    </footer>
+</body>
+</html>
