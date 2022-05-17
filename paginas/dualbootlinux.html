@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="icon" href="../imagens/icones/icone_dual_boot.ico" />
+    <title>Dual Boot Linux</title>
+</head>
+<body id="inicio">
+
+    <header>Explorando SOs</header>
+    <nav>
+        <ul id="navbar">
+            <li class="lista_da_navbar"><a class="link_da_navbar" href="../index.html">Página Inicial</a></li>
+            <li class="lista_da_navbar"><a class="link_da_navbar" href="../paginas/dualbootwindows.html">Dual Boot no Windows</a></li>
+            <li class="lista_da_navbar"><a class="link_da_navbar" href="../paginas/dualbootarquivos.html">Partição de Arquivos</a></li>
+            <li class="lista_da_navbar"><a class="link_da_navbar" href="../paginas/comofazerumamidiabootavel.html">Mídia Bootável</a></li>
+            <li class="lista_da_navbar"><a class="link_da_navbar" href="../paginas/baixarisodowindowsnowindows.html" >ISO do Windows no Windows</a></li>
+            <li class="lista_da_navbar"><a class="link_da_navbar" href="../paginas/baixarisodowindowsnolinux.html">ISO do Windows no Linux</a></li>
+            <li class="lista_da_navbar"><a class="link_da_navbar" href="../paginas/baixarisodolinux.html">ISO do Linux</a></li>
+            <li class="lista_da_navbar"><a class="link_da_navbar" href="../paginas/entrandonabios.html">Entrando na BIOS</a></li>
+            <li class="lista_da_navbar"><a class="link_da_navbar" href="../paginas/sobre.html" >Sobre Mim</a></li>
+            <li class="lista_da_navbar"><a class="link_da_navbar" href="#fim">Ir para o fim da página</a></li>
+         </ul>
+    </nav>
+
+    <main>
+        <h1>Como fazer o dual boot no Linux</h1>
+        <p>
+            Feito o processo no Windows e hora de fazer o processo no Linux, a interface será um pouco diferente e alguns passos devem ser seguidos para efetuar o dual boot com sucesso. Lembrando que as imagens podem variar de acordo com a distribuição Linux que você está utilizando, aqui o processo foi feito utilizando a versão Linux Mint Cinnamon 20.3.
+        </p><br />
+        <ol>
+            <!-- Passo 21: -->
+            <li>
+                Depois de instalar o Windows chegou a hora de instalar o Linux. Você pode verificar se a <a class="link_navegacao" href="entrandonabios.html">ordem de inicializção na na BIOS</a> está configurada de forma correta, e no Ventoy selecionando o "arquivo.iso" do Linux. Feito isso você chegará nessa tela e selecionará a primeira opção <strong>"Start Linux Mint"</strong>.
+                <p>
+                    <img src="../imagens/linux/passo21.png" alt="Tela da página de opções Linux Mint" title="Tela da página de opções Linux Mint" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 22: -->
+            <li>
+                Nessa tela você poderá testar o Linux Mint diretamente da sua mídia bootável antes de seguir para a instalação se assim desejar.<br /> <em>Importante:</em> seus arquivos não ficarão salvos depois que você fazer a instalação. Caso não queria testar basta clicar em <strong>"Install Linux Mint"</strong>.
+                <p>
+                    <img src="../imagens/linux/passo22.png" alt="Tela do Linux Mint ainda sem estar instalado" title="Tela do Linux Mint ainda sem estar instalado" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 23: -->
+            <li>
+                Selecione o idioma que deseja prosseguir.
+                <p>
+                    <img src="../imagens/linux/passo23.png" alt="Tela para selecionar o idioma do Linux Mint" title="Tela para selecionar o idioma do Linux Mint" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 24: -->
+            <li>
+                Selecione o layout de teclado que deseja prosseguir.
+                <p>
+                    <img src="../imagens/linux/passo24.png" alt="Tela para selecionar o layout do teclado do Linux Mint" title="Tela para selecionar o layout do teclado do Linux Mint" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 25: -->
+            <li>
+                Caso você queira que alguns formatos de mídia sejam executados, marque essa opção. É bom marca-lá para não precisar instalar manualmente o leitor de alguns arquivos depois.
+                <p>
+                    <img src="../imagens/linux/passo25.png" alt="Tela de Codecs de multimídia do Linux Mint" title="Tela de Codecs de multimídia do Linux Mint" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 26: -->
+            <li>
+                Aqui semelhante ao Windows, selecione <strong>"Opção avançada"</strong>.
+                <p>
+                    <img src="../imagens/linux/passo26.png" alt="Tela de tipo de instalação do Linux Mint" title="Tela de tipo de instalação do Linux Mint" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 27: -->
+            <li>
+                Chegando nessa tela você verá algo semelhante a imagem abaixo, aqui é <strong>muito importante</strong> você notar que as partições (no <a class="link_navegacao" href="dualbootwindows.html#passo10">passo 10</a>) que nós fizemos no Windows permanecem aqui, as primeiras partições é onde o Windows foi instalado, então <strong>TENHA MUITA ATENÇÃO NA HORA DE SELECIONAR A PARTIÇÃO, GERALMENTE VOCÊ INSTALA-RÁ NA SEGUNDA PARTIÇÃO COM A QUANTIDADE DE ESPAÇO QUE VOCÊ RESERVOU PARA O LINUX. SE VOCÊ FORMATAR A PRIMEIRA APAGRÁ O WINDOWS E TERÁ QUE REINICIAR TODO O PORCESSO!</strong>
+                <p>
+                    <img src="../imagens/linux/passo27.png" alt="Tela de onde instalar o Linux Mint" title="Tela de onde instalar o Linux Mint" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 28: -->
+            <li>
+                Selecionada corretamente a partição clique com o botão direito do mouse e clique em <strong>"Apagar"</strong>.
+                <p>
+                    <img src="../imagens/linux/passo28.png" alt="Tela de onde instalar o Linux Mint com o menu de opções da partição selecionada do Linux Mint 1" title="Tela de onde instalar o Linux Mint com o menu de opções da partição selecionada do Linux Mint 1" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 29: -->
+            <li>
+                Com a a partição apagada você clicará como o botão direito e clicará em <strong>"Adicionar"</strong>.
+                <p>
+                    <img src="../imagens/linux/passo29.png" alt="Tela de onde instalar o Linux Mint com o menu de opções da partição selecionada do Linux Mint 2" title="Tela de onde instalar o Linux Mint com o menu de opções da partição selecionada do Linux Mint 2" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 30: -->
+            <li>
+                Abrindo essa tela coloque o tamanho dessa partição em 512MB deixe as opções <strong>"Lógica"</strong> e <strong>"Início deste espaço"</strong> marcadas. Em <strong>"Usar como"</strong> selecione <strong>"Sistema de arquivos "journaling" ext4"</strong>. E em
+                <strong>"Ponto de montagem"</strong> selecione <strong>"/boot"</strong>. Clique em <strong>"Ok"</strong> e pronto.
+                <p>
+                    <img src="../imagens/linux/passo30.png" alt="Tela de criar partição boot no Linux Mint" title="Tela de criar partição boot no Linux Mint" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 31: -->
+            <li>
+                Repita o processo de apertar com o botão direito do mouse na partição com espaço livre, clique em <strong>"Adicionar"</strong> novamente e aí naquela tela vá em <strong>"Usar como"</strong> e selecione <strong>"Área de troca (swap)"</strong>.
+                <p>
+                    <img src="../imagens/linux/passo31.png" alt="Tela de selecionar ponto de montegem do Linux Mint" title="Tela de selecionar ponto de montegem do Linux Mint" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 32: -->
+            <li>
+                Após isso defina o tamanho da partição SWAP aqui eu coloquei 1000MB (Cerca de 1GB), o ideal é não passar de 4000MB (4GB), deixe as opções padrão marcadas e clique em <strong>"Ok"</strong>.
+                <p>
+                    <img src="../imagens/linux/passo32.png" alt="Tela de criar partição swap no Linux Mint" title="Tela de criar partição swap no Linux Mint" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 33: -->
+            <li>
+                Repita o processo de apertar com o botão direito do mouse na partição com espaço livre, clique em <strong>"Adicionar"</strong> novamente.
+                <p>
+                    <img src="../imagens/linux/passo33.png" alt="Tela de onde instalar o Linux Mint com o menu de opções da partição selecionada do Linux Mint" title="Tela de onde instalar o Linux Mint com o menu de opções da partição selecionada do Linux Mint" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 34: -->
+            <li>
+                Abrindo essa tela coloque o tamanho dessa partição o total disponível, deixe as opções <strong>"Lógica"</strong> e <strong>"Início deste espaço"</strong> marcadas. Em <strong>"Usar como"</strong> selecione <strong>"Sistema de arquivos "journaling" ext4"</strong>. E em
+                <strong>"Ponto de montagem"</strong> selecione <strong>"/"</strong>. Clique em <strong>"Ok"</strong> e pronto.
+                <p>
+                    <img src="../imagens/linux/passo34.png" alt="Tela de criar partição para instlar a ISO Linux Mint" title="Tela de criar partição para instlar a ISO Linux Mint" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 35: -->
+            <li>
+                Nessa tela tudo já estará feito e agora basta a instalação do Linux, na partição que foi criada no passo anterior, clique em <strong>"Instalar Agora"</strong>.
+                <p>
+                    <img src="../imagens/linux/passo35.png" alt="Tela com todas as patições montadas" title="Tela com todas as patições montadas" /><br /><br />
+                </p>
+            </li>
+            
+            <!-- Passo 36: -->
+            <li>
+                Clique em <strong>"Continuar"</strong>.
+                <p>
+                    <img src="../imagens/linux/passo36.png" alt="Tela de escrever as mudanças no disco" title="Tela de escrever as mudanças no disco" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 37: -->
+            <li>
+                Selecione o fuso horário desejado e clique em <strong>"Continuar"</strong>.
+                <p>
+                    <img src="../imagens/linux/passo37.png" alt="Tela de selecionar fuso horário" title="Tela de selecionar fuso horário" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 38: -->
+            <li>
+                Faça a criação do usuário e clique em <strong>"Continuar"</strong>.
+                <p>
+                    <img src="../imagens/linux/passo38.png" alt="Tela de criar o usuário" title="Tela de criar o usuário" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 39: -->
+            <li>
+                Aqui espere a instalação do Linux Mint. Isso pode demorar algum tempo assim como no Windows.
+                <p>
+                    <img src="../imagens/linux/passo39.png" alt="Tela de instalação do Linux Mint" title="Tela de instalação do Linux Mint" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 40: -->
+            <li>
+                Depois da instalação concuída clique em <strong>"Reiniciar Agora"</strong>.
+                <p>
+                    <img src="../imagens/linux/passo40.png" alt="Tela para selecionar uma opcção após a instalação do Linux Mint" title="Tela para selecionar uma opcção após a instalação do Linux Mint" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 41: -->
+            <li>
+                Aqui apenas remova a sua mídia bootável do seu computador aperte <strong>"Enter"</strong> e espere.
+                <p>
+                    <img src="../imagens/linux/passo41.png" alt="Tela de remoção da mídia bootável do Linux Mint" title="Tela de remoção da mídia bootável do Linux Mint" /><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 42: -->
+            <li>
+                Parabéns agora você tem o dual boot feito em sua máquina e pode usa-lá como preferir, mas espere e a partição de arquivos? Isso nós vamos configuraremos lá no Windows na <a class="link_navegacao" href="dualbootarquivos.html">próxima página</a> 
+                <p>
+                    <img src="../imagens/linux/passo42.png" alt="Tela do Grub do Linux Mint" title="Tela do Grub do Linux Mint" /><br /><br />
+                </p>
+            </li>
+        </ol>
+
+        <div class="div_link_navegacao" >
+            <strong><a class="link_navegacao" href="dualbootwindows.html" >Página de dual boot no Windows </a><br/>
+            <a class="link_navegacao" href="#inicio">Início da Página</a><br />
+            <a class="link_navegacao" href="dualbootarquivos.html" >Configuração para os arquivos</a></strong>
+        </div>
+    </main>
+    <footer><br />
+        Entre em contato<br /><a class="link_rodape" href="https://api.whatsapp.com/send?phone=5547996240146&text=Ol%C3%A1%2C%20estou%20entrando%20em%20contato%2C%20pois%20quero%20dar%20dicas%20e%20sugest%C3%B5es%20para%20o%20seu%20site!" target="_blank"><img src="../imagens/logos/whatsapp_logo.png" alt="WhatsApp" title="WhatsApp" class="imagem_rodape" /></a>
+ 
+        <a class=" link_rodape" href="https://www.instagram.com/thales.paulo_/" target="_blank"><img src="../imagens/logos/instagram_logo.png" alt="Instagram" title="Instagram" class="imagem_rodape"></a>
+
+       <a class="link_rodape" href="https://www.facebook.com/profile.php?id=100007309126414" target="_blank"><img src="../imagens/logos/facebook_logo.png" alt="Facebook" title="Facebbok" class="imagem_rodape" /></a>
+ 
+        <div id="fim" class="nome_rodape">Explorando SOs</div>
+    </footer>
+    
+</body>
+</html>
