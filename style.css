@@ -139,11 +139,11 @@ img:hover{
 
 #minha_imagem {
     width: 100px;
-    height: 150px;
+    height: 100px;
     margin-left: auto;
     margin-right: 15px;
     display: block;
-    border-radius: 10px;
+    border-radius: 50%;
     transition: 0.5s;
     float: left;
     
