@@ -1,3 +1,8 @@
+*::selection {
+    background-color: rgb(78, 78, 78);
+    color: white;
+}
+
 body {
     font-family: 'Roboto Flex', sans-serif;
     background-color: rgb(202, 202, 202);
