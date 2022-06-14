@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../style.css" rel="stylesheet">
+    <link href="../bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="../imagens/icones/icone_dual_boot.ico" />
+    <title>Configurando a partição de arquivos</title>
+</head>
+<body id="inicio">
+    <header class="text-center background-header p-3 text-white h3 mb-0" style="border-bottom-style: solid; border-bottom-color: white; border-width: 1px;">Explorando SOs</header>
+    
+    <nav class="navbar navbar-expand-sm background navbar-dark justify-content-end position-sticky sticky-top pt-1 pb-1">
+        <button class="navbar-toggler mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" style="border-radius: 10px; margin: 15px; margin-top: 4px; color:rgb(171, 207, 248);">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+
+            <ul class="navbar-nav nav-pills">
+        
+                <li class="nav-item nav-lista text-center m-0"><a href="../index.html"><i class="bi bi-house pr"></i></a></li>
+
+                <li class="nav-item text-center m-0 nav-lista">
+                    <a href="comofazerumamidiabootavel.html">Mídia Bootável</a>
+                </li>
+
+                <li class="nav-item text-center m-0 nav-lista-clicado active bg-secondary rounded">
+                  <a href="dualbootarquivos.html">Arquivos</a>
+                </li>
+
+                <li class="nav-item text-center m-0 nav-lista">
+                    <a href="entrandonabios.html">BIOS</a>
+                </li>
+
+                <li class="nav-item dropdown text-center m-0 nav-lista">
+                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Windows</a>
+                    <ul class="dropdown-menu m-0 bg-black">
+                        <li class="bg-black nav-lista-dropdown2"><a class="dropdown-item" href="baixarisodowindowsnolinux.html">ISO do Windows no Linux</a></li>
+                        <li class="bg-black nav-lista-dropdown2"><a class="dropdown-item" href="baixarisodowindowsnowindows.html">ISO do Windows no Windows</a></li>
+                         <li class="bg-black nav-lista-dropdown2"><a class="dropdown-item" href="dualbootwindows.html">Dual Boot Windows</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown text-center m-0 nav-lista">
+                    <a class= "dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Linux</a>
+                    <ul class="dropdown-menu bg-black">
+                        <li class="bg-black nav-lista-dropdown2"><a class="dropdown-item" href="baixarisodolinux.html">ISO do Linux</a></li>
+                        <li class="bg-black nav-lista-dropdown2"><a class="dropdown-item" href="dualbootlinux.html">Dual Boot Linux</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item nav-item text-center m-0 nav-lista">
+                    <a href="sobre.html">Sobre</a>
+                </li>  
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Como Configurar a Partição de Arquivos</h1>
+        <p>
+            Com o dual boot pronto chegou a hora de configurar a partição de arquivos que pode ser acessada a partir de qualquer SO. Ela vai ser feita a partir do próprio gerenciador de partições do Windows.
+        </p>
+
+        <ol>
+            <!-- Passo 1: -->
+            <li>
+                No menu iniciar procure por <strong>"Gerenciamento de disco"</strong> abra-o e procure a partição que você deicou para os arquivos. <strong>IMPORTANTE: CASO VOCÊ FORMATE A PARTIÇÃO ERRADA, PODE SER QUE O LINUX PARE DE FUNCIONAR E VOCÊ TENHA QUE FAZER O PROCESSO DE INSTALAÇÃO SO ZERO, POR ISSO CERTIFIQUE-SE DE SELECIONAR A PARTIÇÃO CORRETA ANTES DE FORMATAR!</strong>
+                <p>
+                    <img src="../imagens/arquivos/arquivos1.png" alt="Tela do gerenciador de disco do Windows 1" title="Tela do gerenciador de disco do Windows 1"><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 2: -->
+            <li>
+                Vista a partição correta, clique com o botão direito encima dela e clique em <strong>"Formatar..."</strong>
+                <p>
+                    <img src="../imagens/arquivos/arquivos2.png" alt="Tela do gerenciador de disco do Windows 2" title="Tela do gerenciador de disco do Windows 2"><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 3: -->
+            <li>
+                Feito isso, de um nome para sua partição, aqui eu dei o nome de "Arquivos", pore´m pode ser o nome de sua preferência em <strong>"Sistema de Arquivos"</strong> selecione <strong>"FAT 32"</strong> ou <strong>"exFAT" </strong> e clique em <strong>"Ok"</strong> e pronto sua partição de Arquivos estará criada.
+                <p>
+                    <img src="../imagens/arquivos/arquvios3.png" alt="Tela do gerenciador de disco do Windows 3" title="Tela do gerenciador de disco do Windows 3"><br /><br />
+                </p>
+            </li>
+
+            <!-- Passo 4: -->
+            <li>
+                Entrando no Linux podemos ver a partição de arquvios criada, você agora pode armazenar seus arquivos aqui e eles serão reconhecidos em ambos os Sitsemas Operacionais, semelhante a um pendrive.
+                <p>
+                    <img src="../imagens/arquivos/arquivosNoLinux.png" alt="Tela do gerenciador de arquivos do Linux" title="Tela do gerenciador de arquivos do Linux"><br /><br />
+                </p>
+            </li>
+        </ol>
+
+        <p>
+            Parabéns você fez o seu dual boot e sua partiçaõ de arquivos agora é só usar. Se você quiser formatar seu SO novamente não precisa apagar essa partição de arquivos é só instalar suas ISOs como quiser, mas isso é assunto para outro momento.
+        </p>
+        <div class="div_link_navegacao"><strong>
+            <a class="link_navegacao" id="fim" href="#inicio">Início da Página</a></strong><br />
+        </div>
+    </main>
+
+    <footer><br />
+        Entre em contato<br /><a class="link_rodape" href="https://api.whatsapp.com/send?phone=5547996240146&text=Ol%C3%A1%2C%20estou%20entrando%20em%20contato%2C%20pois%20quero%20dar%20dicas%20e%20sugest%C3%B5es%20para%20o%20seu%20site!" target="_blank"><img src="../imagens/logos/whatsapp_logo.png" alt="WhatsApp" title="WhatsApp" class="imagem_rodape" /></a>
+
+        <a class=" link_rodape" href="https://www.instagram.com/thales.paulo_/" target="_blank"><img src="../imagens/logos/instagram_logo.png" alt="Instagram" title="Instagram" class="imagem_rodape"></a>
+
+       <a class="link_rodape" href="https://www.facebook.com/profile.php?id=100007309126414" target="_blank"><img src="../imagens/logos/facebook_logo.png" alt="Facebook" title="Facebbok" class="imagem_rodape" /></a>
+
+        <div class="nome_rodape">Explorando SOs</div>
+    </footer>
+</body>
+</html>
