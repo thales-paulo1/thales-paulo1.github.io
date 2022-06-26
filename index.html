@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Como fazer um Dual boot, como fazer uma mídia bootável, baixar arquivos ISO, entre outros" />
+    <meta name="keywords" content="dual boot, particao de arquivos, midia bootavel, pendrive bootavel" />
+    <meta name="author" content="Thales Paulo" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" href="imagens/icones/icone_dual_boot.ico" />
+    <link href="style.css" rel="stylesheet">
+    <link href="bootstrap.css" rel="stylesheet">
+    <!-- JavaScript Bundle with Popper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Como Fazer um Dual Boot</title>
+</head>
+<body id="inicio" class="background-body">
+    <header class="text-center background-header p-3 text-white h3 mb-0" style="border-bottom-style: solid; border-bottom-color: white; border-width: 1px;">Explorando SOs</header>
+
+    
+    <nav class="navbar navbar-expand-sm background navbar-dark justify-content-end position-sticky sticky-top pt-1 pb-1">
+        <button class="navbar-toggler mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" style="border-radius: 10px; margin: 15px; margin-top: 4px; color:rgb(171, 207, 248);">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+
+            <ul class="navbar-nav nav-pills">
+        
+                <li class="nav-item nav-lista-clicado text-center m-0 active bg-secondary rounded"><a href="index.html"><i class="bi bi-house pr"></i></a></li>
+
+                <li class="nav-item text-center m-0 nav-lista">
+                    <a href="paginas/comofazerumamidiabootavel.html">Mídia Bootável</a>
+                </li>
+
+                <li class="nav-item text-center m-0 nav-lista">
+                    <a href="paginas/entrandonabios.html">BIOS</a>
+                </li>
+
+                <li class="nav-item dropdown text-center m-0 nav-lista">
+                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Windows</a>
+                    <ul class="dropdown-menu m-0 bg-black">
+                        <li class="bg-black nav-lista-dropdown2"><a class="dropdown-item" href="paginas/baixarisodowindowsnolinux.html">ISO do Windows no Linux</a></li>
+                        <li class="bg-black nav-lista-dropdown2"><a class="dropdown-item" href="paginas/baixarisodowindowsnowindows.html">ISO do Windows no Windows</a></li>
+                         <li class="bg-black nav-lista-dropdown2"><a class="dropdown-item" href="paginas/dualbootwindows.html">Dual Boot Windows</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown text-center m-0 nav-lista">
+                    <a class= "dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Linux</a>
+                    <ul class="dropdown-menu bg-black">
+                        <li class="bg-black nav-lista-dropdown2"><a class="dropdown-item" href="paginas/baixarisodolinux.html">ISO do Linux</a></li>
+                        <li class="bg-black nav-lista-dropdown2"><a class="dropdown-item" href="paginas/dualbootlinux.html">Dual Boot Linux</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item text-center m-0 nav-lista">
+                    <a href="paginas/dualbootarquivos.html">Arquivos</a>
+                </li>
+
+                <li class="nav-item nav-item text-center m-0 nav-lista">
+                    <a href="paginas/sobre.html">Sobre</a>
+                </li>  
+            </ul>
+        </div>
+    </nav>
+
+        <main>
+            <div class="container text-center">
+                <h1 class="text-center h1 m-4 titulo" style="color:rgb(171, 207, 248);">Como fazer dual boot com Windows e Linux</h1>
+                <p class="text-start m-0 paragrafo">
+                    Se você deseja fazer um dual boot deve se ater a alguns detalhes importantes na hora da instalação, nesse tutorial vamos ver como particionar o HD/SSD, as partições para Windows e Linux, além de uma partição de arquivos, que não é obrigatória, porém é algo útil se você deseja compartilhar seus  arquivos entre os dois Sistemas Operacionais.
+                </p><br />
+
+                    <!-- Carousel -->
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    </div>
+                
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="img-fluid rounded d-block w-100" src="imagens/dual_boot/dualboot.jpg" alt="Imagem de Dual Boot" title="Imagem de Dual Boot"/>
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <img class="img-fluid rounded d-block w-100" src="imagens/dual_boot/dualboot2.jpg" alt="Imagem de Dual Boot" title="Imagem de Dual Boot"/>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="img-fluid rounded d-block w-100" src="imagens/dual_boot/dualboot3.png" alt="Imagem de Dual Boot" title="Imagem de Dual Boot"/>
+                        </div>
+
+                    </div>
+                            <!-- Left and right controls/icons -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                </div>
+                <br /><br />
+                
+
+                <h2 class="h2 m-4 titulo" style="color:rgb(171, 207, 248);">O que é um dual boot?</h2>
+                <p class="text-start m-0 paragrafo">
+                    Um dual boot basicamente consiste em colocar dois sistemas operacionais diferentes no mesmo HD/SSD.
+                </p><br />
+
+                <h2 class="h2 m-4 titulo" style="color:rgb(171, 207, 248);">Para que ele serve?</h2>
+                <p class="text-start m-0 paragrafo">
+                    O uso pode variar de acordo com a necessidade do usuário, alguns podem fazer porque necessitam de aplicativos específicos que somente podem ser baixados naquele determinado sistema, alguns porque tem diferentes usos para cada SO (Sistema Operacional), por exemplo: Windows para jogos e Linux para programação e alguns pelo simples fato de que querem se aventurar em fazer um dual boot.
+                </p><br />
+
+                <h2 class="h2 m-4 titulo" style="color:rgb(171, 207, 248);">O que é necessário para fazer um dual boot?</h2>
+                <p class="text-start m-0 paragrafo">
+                    Primeiramente você precisará de uma mídia bootável, seja ela um pendrive, um CD, um HD/SSD externo, nesse <a class="link-cor" href="paginas/comofazerumamidiabootavel.html">link</a> você encontra como fazer uma mídia bootável.
+                </p><br />
+                <p>
+                    Alguns SOs possuem formas semelhantes de instalação são eles:
+                </p>
+
+                <!-- <p><kbd>Ctrl +</kbd></p> -->
+               
+
+                    <table class="table table-dark table-bordered text-center table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th>Linux</th>
+                            <th>Windows</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Linux Mint Mate</td>
+                            <td>Windows 7</td>
+                        </tr>
+                        <tr>
+                            <td>Linux Mint Xfce Edition</td>
+                            <td>Windows 10</td>
+                        </tr>
+
+                        <tr>
+                            <td>Linux Mint Cinnamon</td>
+                            <td>Windows 11</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+                <div class="text-center bg-dark p-2" >
+                    <strong><a class="link_navegacao link-cor" href="#inicio">Início da página</a></strong><br />
+                    <strong><a class="link_navegacao link-cor" id="fim" href="paginas/dualbootwindows.html">Iniciar o dual boot</a></strong><br />
+                </div> 
+                
+            <div class="toast show fixed-bottom m-2 fade border-0" style="border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0); border-radius: 12px; margin: 10px;" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header bg-notificacao-header text-white" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                    <strong class="me-auto">Entre em contato</strong>
+                    <button type="button" class="btn-close ms-2 mb-1" data-bs-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+
+                <div class="toast-body bg-notificacao-body">
+                    <div class="justify-content-center text-center pb-2">
+                        <a class="m-2" href="https://api.whatsapp.com/send?phone=5547996240146&text=Ol%C3%A1%2C%20estou%20entrando%20em%20contato%2C%20pois%20quero%20dar%20dicas%20e%20sugest%C3%B5es%20para%20o%20seu%20site!" target="_blank"><i class="bi bi-whatsapp icone-wp"></i></a>
+                
+                        <a class="m-2" href="https://www.instagram.com/thales.paulo_/" target="_blank"><i class="bi bi-instagram icone-ig"></i></a>
+                
+                        <a class="m-2" href="https://www.facebook.com/profile.php?id=100007309126414" target="_blank"><i class="bi bi-facebook icone-fb"></i></a>
+                    </div>
+                </div>
+        </div>
+        </main>
+
+        <footer class="background">
+            <p class="text-center mb-0 pt-2">Entre em contato</p>
+           
+        <div class="justify-content-center text-center pb-2">
+            <a class="m-2" href="https://api.whatsapp.com/send?phone=5547996240146&text=Ol%C3%A1%2C%20estou%20entrando%20em%20contato%2C%20pois%20quero%20dar%20dicas%20e%20sugest%C3%B5es%20para%20o%20seu%20site!" target="_blank"><i class="bi bi-whatsapp icone-wp"></i></a>
+    
+            <a class="m-2" href="https://www.instagram.com/thales.paulo_/" target="_blank"><i class="bi bi-instagram icone-ig"></i></a>
+    
+            <a class="m-2" href="https://www.facebook.com/profile.php?id=100007309126414" target="_blank"><i class="bi bi-facebook icone-fb"></i></a>
+        </div>
+    
+        <p class="text-center background-header p-3 text-white h3 mb-0" style="border-top-style: solid; border-top-color: white; border-width: 1px;">Explorando SOs</p>
+        </footer>
+</body>
+</html>
