@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../style.css" rel="stylesheet">
+    <link href="../bootstrap.css" rel="stylesheet">
+    <!-- JavaScript Bundle with Popper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="../imagens/icones/icone_dual_boot.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Dual Boot Windows</title>
+</head>
+<body id="inicio" class="background-body">
+    <header class="text-center background-header p-3 text-white h3 mb-0" style="border-bottom-style: solid; border-bottom-color: white; border-width: 1px;">Explorando SOs</header>
+    
+    <nav class="navbar navbar-expand-sm background navbar-dark justify-content-end position-sticky sticky-top pt-1 pb-1">
+        <button class="navbar-toggler mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" style="border-radius: 10px; margin: 15px; margin-top: 4px; color:rgb(171, 207, 248);">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+
+            <ul class="navbar-nav nav-pills">
+        
+                <li class="nav-item nav-lista text-center m-0 pr-2"><a href="../index.html"><i class="bi bi-house pr"></i>   Home</a></li>
+
+                <li class="nav-item text-center m-0 nav-lista pr-2">
+                    <a href="comofazerumamidiabootavel.html"><i class="bi bi-hdd"></i>   Mídia Bootável</a>
+                </li>
+
+                <li class="nav-item text-center m-0 nav-lista">
+                    <a href="entrandonabios.html"><i class="bi bi-cpu"></i>   BIOS</a>
+                </li>
+
+                <li class="nav-item dropdown text-center m-0 nav-lista nav-lista nav-lista-clicado active bg-secondary rounded pr-2">
+                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="bi bi-microsoft"></i>   Windows</a>
+                    <ul class="dropdown-menu m-0 pt-2 border-0 bg-black">
+                        <li class="bg-black nav-lista-dropdown2"><a class="dropdown-item" href="baixarisodowindowsnolinux.html">ISO do Windows no Linux</a></li>
+                        
+                        <li class="bg-black nav-lista-dropdown2"><a class="dropdown-item" href="baixarisodowindowsnowindows.html">ISO do Windows no Windows</a></li>
+                         <li class="text-center m-0 active bg-secondary nav-lista-dropdown"><a class="dropdown-item cor" href="dualbootwindows.html">Dual Boot Windows</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown text-center m-0 nav-lista pr-2">
+                    <a class= "dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="bi bi-file-binary"></i>   Linux</a>
+                    <ul class="dropdown-menu p-0 border-0">
+                        <li class="text-center m-0 bg-black nav-lista-dropdown2"><a class="dropdown-item" href="baixarisodolinux.html">ISO do Linux</a></li>
+                        
+                        <li class="text-center m-0 bg-black nav-lista-dropdown2"><a class="dropdown-item" href="dualbootlinux.html">Dual Boot Linux</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item text-center m-0 nav-lista pr-2">
+                    <a href="dualbootarquivos.html"><i class="bi bi-archive"></i>   Arquivos</a>
+                </li>
+
+                <li class="nav-item nav-item text-center m-0 nav-lista">
+                    <a href="sobre.html"><i class="bi bi-person"></i>   Sobre</a>
+                </li>  
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h1 class="text-center h1 m-4 titulo" style="color:rgb(171, 207, 248);">Como fazer o dual boot no Windows</h1>
+            <p class="text-start m-0 paragrafo">
+                Para fazer o Dual Boot do o ideal é sempre se começar pelo Windows pois, se você começar pelo Linux pode ser que o Windows não seja reconhecido, ou apresente falhas. Aqui detalharei a maioria das telas em que o usuário passará durante o processo.
+            </p>
+            <p class="text-start m-0 paragrafo">
+                Agora que você chegou aqui, você já deve ter feito o processo de <a class="link_navegacao link-cor" href="comofazerumamidiabootavel.html">baixar as imagens ".iso"</a> na sua mídia bootável com o <a class="link_navegacao link-cor" href="https://www.ventoy.net/en/download.html" target="_blank">Ventoy</a>, um passo importante para prosseguir é <a class="link_navegacao link-cor" href="entrandonabios.html">alterar a ordem de boot na BIOS</a> do seu computador. Após isso siga esses passos para instalação.
+            </p><br />
+
+            <ol class="text-start m-0 paragrafo">
+                <!-- Passo 1: -->
+                <li>
+                    Após ter selecionado a ISO do Windows 10 na tela do Ventoy, agora é hora de <strong>iniciar a instalação do Windows.</strong> A primiera tela que aparecerá será essa a seguir, nela você selecionará o seu idioma e o seu estilo de teclado, aqui eu usei o ABNT2. Feita a configuração clique em <strong>"Avançar".</strong>
+                    <p class="text-center mt-3 mb-5">
+                        <img class="img-fluid rounded" src="../imagens/windows/passo1.png" alt="Tela para selecionar o idioma e o teclado do Windows" title="Tela para selecionar o idioma e o teclado do Windows" /><br /><br />
+                    </p>
+                </li>
+
+                <!-- Passo 2: -->
+                <li>
+                    Apenas aperte em <strong>"Instalar Agora".</strong>
+                    <p class="text-center mt-3 mb-5">
+                        <img class="img-fluid rounded" src="../imagens/windows/passo2.png" alt="Tela para instalar o Windows" title="Tela para instalar o Windows" /><br /><br />
+                    </p>
+                </li>
+
+                <!-- Passo 3: -->
+                <li>
+                    Coloque a <strong>chave do Windows</strong> caso possua uma licença. Se quiser configura-lá depois, basta clicar em <strong>"não tenho a chave do produto".</strong>
+                    <p class="text-center mt-3 mb-5">
+                        <img class="img-fluid rounded" src="../imagens/windows/passo3.png" alt="Tela pra colocar a Chave do Windows" title="Tela pra colocar a Chave do Windows" /><br /><br />
+                    </p>
+                </li>
+
+                <!-- Passo 4: -->
+                <li>
+                    Selecione a <strong>versão do Windows</strong> que desejar. Aqui estarei utilizando o Windows 10 Pro.
+                    Se você não sabe a versão do Windows que está utilizando e deseja manter na mesma, nesse <a class="link_navegacao link-cor" href="https://support.microsoft.com/pt-br/windows/qual-vers%C3%A3o-do-sistema-operacional-microsoft-windows-estou-usando-628bec99-476a-2c13-5296-9dd081cdd808#:~:text=Para%20descobrir%20qual%20vers%C3%A3o%20do,%3E%20Configura%C3%A7%C3%B5es%20%3E%20Sistema%20%3E%20Sobre%20." target="_blank">link</a> você será redirecionado para um tutorial no site da Microsoft.
+
+                    <p class="text-center mt-3 mb-5">
+                        <img class="img-fluid rounded" src="../imagens/windows/passo4.png" alt="Tela de selecionar a versão do Windows" title="Tela de selecionar a versão do Windows" /><br /><br />
+                    </p>
+                </li>
+
+                <!-- Passo 5: -->
+                <li>
+                    Basta marcar a opção <strong>"Aceito os termos de licença"</strong> e clicar em <strong>"Avançar".</strong>
+                    <p class="text-center mt-3 mb-5">
+                        <img class="img-fluid rounded" src="../imagens/windows/passo5.png" alt="Tela de linceças do Windows" title="Tela de linceças do Windows" /><br /><br />
+                    </p>
+                </li>
+
+                <!-- Passo 6: -->
+                <li>
+                    Selecione o tipo de instalação <strong>"Personalizada"</strong> do Windows.
+                    <p class="text-center mt-3 mb-5">
+                        <img class="img-fluid rounded" src="../imagens/windows/passo6.png" alt="Tela de tipo de instalação" title="Tela de tipo de instalação" /><br /><br />
+                    </p>
+                </li>
+
+                <!-- Passo 7: -->
+                <li>
+                    Chegando em uma tela semelhante, provavelmente se você está fazendo isso pela primeira vez, aparecerá várias partições criadas pelo seu SO, semelhante ao da imagem do <a class="link_navegacao link-cor" href="#passo11">passo 11</a>. É importante para fazer a resintalação do Windows <strong>excluir</strong> todas essas partições.
+                    <br />
+                    <div class="alert alert-warning alert-dismissible rounded border-warning">
+                        <strong>Importante!</strong>
+                        Tudo (arquivos, fotos, músicas, aplicativos, entre outros) será apagado do seu HD/SSD! inclusive o próprio Sistema Operacional, esteja ciente que essa ação é irreversível e certifique-se de que tenha feito backup de todos seus aqruivos antes de prosseguir. Para exclir uma partição é só selecioná-la e clicar em <strong>"Excluir".</strong> após você apagar todas as partições, você chegará em uma tela semelhante a essa.
+                    </div>
+
+                    <div class="alert alert-danger border-danger rounded">
+                        <strong>Nota:</strong> aqui você já formatou seu HD/SSD e qualquer coisa que tinha lá, agora não existe mais por isso, tenha certeza que é isso que você deseja.
+                    </div>
+                    
+                    <p class="text-center mt-3 mb-5">
+                        <img class="img-fluid rounded" src="../imagens/windows/passo7.png" alt="Tela de onde instalar o Windows" title="Tela de onde instalar o Windows" /><br /><br />
+                    </p>
+                </li>
+
+                <!-- Passo 8: -->
+                <li>
+                    Após o passo anterior. clique em <strong>"Novo"</strong> e um espaço aparecerá para você escolher o tamanho da partição do Windows em MB. Como aqui se trata de 50GB deixei 20000 MB (20GB aproximadamente) para o Windows. Esse valor é opcional e variável de acordo com a sua necessidade e tamanho do seu HD/SSD. Se você pretende instalar muitos aplicativos pesados no Windows reserve um espaço maior do seu HD/SSD. Clique em <strong>"Aplicar"</strong> e pronto a sua partição estará criada.
+                    <p class="text-center mt-3 mb-5">
+                        <img class="img-fluid rounded" src="../imagens/windows/passo8.png" alt="Tela de tamanho da partição do Windows" title="Tela de tamanho da partição do Windows" /><br /><br />
+                    </p>
+                </li>
+
+                <!-- Passo 9: -->
+                <li>
+                    Chegando nessa tela você já terá feito a partição do Windows e fará agora a do Linux, selecione <strong>"Espaço não alocado"</strong> e clique em <strong>"Novo"</strong> para fazer a partição.
+                    <p class="text-center mt-3 mb-5">
+                        <img class="img-fluid rounded" src="../imagens/windows/passo9.png" alt="Tela de partição do Windows e espaço restante" title="Tela de partição do Windows e espaço restante" /><br /><br />
+                    </p>
+                </li>
+
+                <!-- Passo 10: -->
+                <li id="passo10">
+                    Como aqui se trata de 50GB deixei 20000 MB (20GB aproximadamente) para o Linux. Esse valor é opcional e variável de acordo com a sua necessidade e tamanho do seu HD/SSD. Se você pretende instalar muitos aplicativos pesados no Linux reserve um espaço maior do seu HD/SSD. Clique em <strong>"Aplicar"</strong> e pronto a sua partição estará criada.
+                    <p class="text-center mt-3 mb-5">
+                        <img class="img-fluid rounded" src="../imagens/windows/passo10.png" alt="Tela de tamanho da partição do Linux" title="Tela de tamanho da partição do Linux" /><br /><br />
+                    </p>
+                </li>
+
+                <!-- Passo 11: -->
+                <li id="passo11">
+                    Essa partição restante eu deixei reservada para <strong>arquivos</strong>. Ela funcionará semelhante a um pendrive, podendo colocar vários tipo de arquivos ali dentro e depois acessando-os independente do SO que você estiver utilizando. Basta selecionar <strong>"Espaço não alocado"</strong>, clicar em <strong>"Novo"</strong>, escolher o tamanho e <strong>"Aplicar"</strong>. E pronto todo o particionamento foi concluído.
+                    <p class="text-center mt-3 mb-5">
+                        <img class="img-fluid rounded" src="../imagens/windows/passo11.png" alt="Tela de partição do Windows, Linux e arquivos" title="Tela de partição do Windows, Linux e arquivos" /><br /><br />
+                    </p>
+                </li>
+
+                <!-- Passo 12: -->
+                <li>
+                    Aqui é muito importante você selecionar a primeira partição (a que tem o valor de armazenamento próximo a que você colocou na hora de criar a partição, aqui no caso a <strong>"Partição 2"</strong>) para colocar o Windows, pois diferente disso, pode ocasionar erros, então após selcionada clique em <strong>"Avançar"</strong>.
+                    <p class="text-center mt-3 mb-5">
+                        <img class="img-fluid rounded" src="../imagens/windows/passo12.png" alt="Tela de todas as partições criadas no Windows" title="Tela de todas as partições criadas no Windows" /><br /><br />
+                    </p>
+                </li>
+
+                <!-- Passo 13: -->
+                <li>
+                    Pronto! Aqui seu Windows já estará instalando e basta esperar o tempo necessário para terminar a instalação, esse tempo pode variar de acordo com o seu HD/SSD.
+                    <p class="text-center mt-3 mb-5">
+                        <img class="img-fluid rounded" src="../imagens/windows/passo13.png" alt="Tela de instalação do Windows" title="Tela de instalação do Windows" /><br /><br />
+                    </p>
+                </li>
+
+                <!-- Passo 14: -->
+                <li>
+                    Após a o término da instalação aparecerá a mensagem para reiniciar, fique tranquilo seu computador vai reinicará várias vezes durante o processo.
+                    <p class="text-center mt-3 mb-5">
+                        <img class="img-fluid rounded" src="../imagens/windows/passo14.png" alt="Tela do Windows segundos antes da reinicialização" title="Tela do Windows segundos antes da reinicialização" /><br /><br />
+                    </p>
+                </li>
+
+                <!-- Passo 15: -->
+                <li>
+                    Espere nessa tela, ela pode demorar um pouco, porque o Windows está fazendo as cofigurações necessárias.
+                    <p class="text-center mt-3 mb-5">
+                        <img class="img-fluid rounded" src="../imagens/windows/passo15.png" alt="Tela de 'Preparando-se' do Windows" title="Tela de 'Preparando-se' do Windows" /><br /><br />
+                    </p>
+                </li>
+
+                <!-- Passo 16: -->
+                <li>
+                    Após alguns minutos naquela tela, essa aparecerá e logo já partirá para as configurações.
+                    <p class="text-center mt-3 mb-5">
+                        <img class="img-fluid rounded" src="../imagens/windows/passo16.png" alt="Tela de 'Um momento' do Windows" title="Tela de 'Um momento' do Windows" /><br /><br />
+                    </p>
+                </li>
+
+                <!-- Passo 17: -->
+                <li>
+                    Pronto! Você já pode configurar o seu Windows da forma que desejar. Selecionando o idioma
+                    <p class="text-center mt-3 mb-5">
+                        <img class="img-fluid rounded" src="../imagens/windows/passo17.png" alt="Tela de selecionar o idioma do Windows" title="Tela de selecionar o idioma do Windows" /><br /><br />
+                    </p>
+                </li>
+
+                <!-- Passo 18: -->
+                <li>
+                    Selecionando o tipo de teclado.
+                    <p class="text-center mt-3 mb-5">
+                        <img class="img-fluid rounded" src="../imagens/windows/passo18.png" alt="Tela de selecionar o tipo de teclado do Windows" title="Tela de selecionar o tipo de teclado do Windows" /><br /><br />
+                    </p>
+                </li>
+
+                <!-- Passo 19: -->
+                <li>
+                    Selecionando o tipo de uso.
+                    <p class="text-center mt-3 mb-5">
+                        <img class="img-fluid rounded" src="../imagens/windows/passo19.png" alt="Tela de tipo de uso para o Windows" title="Tela de tipo de uso para o Windows" /><br /><br />
+                    </p>
+                </li>
+
+                <!-- Passo 20: -->
+                <li>
+                    Antes dessa tela, aparecerão várias outras telas, para você fazer suas configurações, nesse momento o Windows te orientará como prosseguir.
+                    <p class="text-center mt-3 mb-5">
+                        <img class="img-fluid rounded" src="../imagens/windows/passo20.png" alt="Tela de 'Isso pode levar alguns minutos' do Windows" title="Tela de 'Isso pode levar alguns minutos' do Windows" /><br /><br />
+                    </p>
+                </li>
+            </ol>
+
+            <p class="text-start m-0 paragrafo">
+                Com o Windows instalado basta irmos para o Linux e fazermos a instalação lá, para terminarmos o dual boot.
+            </p>
+            <br />
+        </div>
+
+    <div class="text-center bg-dark p-2" >
+         <strong><a class="link_navegacao link-cor" href="#inicio">Início da página</a></strong><br />
+         <strong><a class="link_navegacao link-cor" id="fim" href="dualbootlinux.html">Continuar no Linux</a></strong>
+    </div>
+
+    </main>
+
+    <footer class="background">
+        <p class="text-center mb-0 pt-2">Entre em contato</p>
+       
+        <div class="justify-content-center text-center">
+            <a class="m-1" href="https://api.whatsapp.com/send?phone=5547996240146&text=Ol%C3%A1%2C%20estou%20entrando%20em%20contato%2C%20pois%20quero%20dar%20dicas%20e%20sugest%C3%B5es%20para%20o%20seu%20site!" target="_blank"><i class="bi bi-whatsapp icone-wp"></i></a>
+    
+            <a class="m-1" href="https://www.instagram.com/thales.paulo_/" target="_blank"><img class="img-insta" src="../imagens/logos/insta.png" alt=""></a>
+    
+            <a class="m-1" href="https://www.facebook.com/profile.php?id=100007309126414" target="_blank"><i class="bi bi-facebook icone-fb"></i></a>
+        </div>
+
+    <p class="text-center background-header p-3 text-white h3 mb-0" style="border-top-style: solid; border-top-color: white; border-width: 1px;">Explorando SOs</p>
+    </footer>
+</body>
+</html>
