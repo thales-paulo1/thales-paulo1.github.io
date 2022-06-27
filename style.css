@@ -152,12 +152,12 @@
     width: 39px;
     height: 59px;
     padding-bottom: 13px;
-    opacity: 0.75;
     transition: 0.2s;
 }
 
 .img-insta:hover {
-   opacity: 1;
+   -webkit-filter: brigtness(150%); 
+   filter: brightness(150%);
 }
 
 /*.icone-ig {
